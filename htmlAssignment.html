@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>My Assignment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <p>Title:</p>
+                <input type="radio" name="titleGroup" checked value="Mr" id="title-mr">
+                <label for="title-mr">Mr.</label>
+                <input type="radio" name="titleGroup" value="Mrs" id="title-mrs" >
+                <label for="title-mrs">Mrs.</label>
+                <input type="radio" name="titleGroup" value="Ms" id="title-ms" >
+                <label for="title-ms">Ms.</label>
+
+                <br>
+
+                <label for="firstName">First Name:</label>
+                <input id="firstName" required maxlength="20" type="text" name="firstName" placeholder="First Name">
+                <label for="lastName">Last Name:</label>
+                <input id="lastName" required maxlength="20" type="text" name="lastName" placeholder="Last Name"> 
+
+                <br>
+
+                <input id="email" type="email" required name="email" placeholder="Enter your email"> 
+                <input id="phone" type="phone" required name="email" placeholder="Telephone" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$">  
+                <label for="date">Birthday:</label>
+                <input id="date" name="date" required type="date">
+
+                <br>
+
+                <input type="checkbox" value="Business Informatics" id="major1">
+                <label for="major1">Business Informatics</label>
+                <input type="checkbox" value="Health Information" id="major2" >
+                <label for="major2">Health Information</label>
+                <input type="checkbox" value="Computer Science" id="major3" >
+                <label for="major3">Computer Science</label>
+
+
+            </fieldset>
+        </form>
+    </body>
+</html>
